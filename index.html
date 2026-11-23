@@ -136,7 +136,7 @@ footer{padding:2.5rem 0 3.5rem;color:var(--mist);font-size:.95rem;border-top:1px
 </main>
 
 <footer>
-  <div class="wrap">Zuki Nkalitshana &middot; Cape Town, South Africa &middot; <a href="mailto:hello@zukinkalitshana.com">hello@zukinkalitshana.com</a></div>
+  <div class="wrap">Zuki Nkalitshana &middot; Cape Town, South Africa &middot; <a href="mailto:zukinkalitshana@gmail.com">zukinkalitshana@gmail.com</a></div>
 </footer>
 
 <script>
@@ -144,7 +144,7 @@ footer{padding:2.5rem 0 3.5rem;color:var(--mist);font-size:.95rem;border-top:1px
   document.getElementById('f').addEventListener('submit',function(e){
     e.preventDefault();var d=new FormData(e.target);
     var body='Name: '+d.get('name')+'\nAbout: '+d.get('type')+'\nTiming: '+(d.get('date')||'Not specified')+'\n\n'+d.get('msg');
-    location.href='mailto:hello@zukinkalitshana.com?subject='+encodeURIComponent('Enquiry: '+d.get('type'))+'&body='+encodeURIComponent(body);
+    location.href='mailto:zukinkalitshana@gmail.com?subject='+encodeURIComponent('Enquiry: '+d.get('type'))+'&body='+encodeURIComponent(body);
   });
 })();
 </script>
