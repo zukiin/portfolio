@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zuki Nkalitshana: software engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0b1022; --deep:#121936; --dusk:#1c2548; --moon:#e8ebf5; --mist:#9aa3c4; --lamp:#e9b872;
+  --serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+html{scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--moon);font:400 1.0625rem/1.65 var(--sans)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--lamp);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+nav .name{font:1.35rem var(--serif);text-decoration:none}
+nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;color:var(--mist)}
+nav ul a:hover{color:var(--moon)}
+.hero{display:flex;align-items:center;border-bottom:1px solid var(--dusk)}
+.hero .wrap{padding-bottom:5rem}
+h1{font:400 clamp(2.6rem,7vw,5.2rem)/1.04 var(--serif);margin:3rem 0 1.5rem;max-width:13em;letter-spacing:-.01em}
+.lede{font-size:1.2rem;color:var(--mist);max-width:36rem;margin:0 0 2rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;border-radius:2px;text-decoration:none;font-weight:600;border:1px solid var(--mist);color:var(--moon);background:transparent;cursor:pointer;font-family:inherit;font-size:1rem}
+.btn.main{background:var(--lamp);border-color:var(--lamp);color:#1a1405}
+.btn:hover{filter:brightness(1.1)}
+.stack{margin-top:2.5rem;color:var(--mist);font-size:.95rem;max-width:40rem}
+section{padding:5rem 0}
+h2{font:400 clamp(2rem,4.5vw,3rem)/1.1 var(--serif);margin:0 0 1rem}
+.intro{color:var(--mist);max-width:38rem;margin:0 0 2.5rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:2.5rem}
+.cols h3{font:400 1.6rem var(--serif);margin:0 0 .5rem}
+.cols p{margin:0;color:var(--mist)}
+.alt{background:var(--deep)}
+.case{border-left:2px solid var(--lamp);padding:.25rem 0 .25rem 1.25rem;max-width:42rem;margin-top:2rem}
+.case h3{font:400 1.5rem var(--serif);margin:0 0 .4rem}
+.case p{margin:0;color:var(--mist)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem}
+.frame{aspect-ratio:4/5;border-radius:2px;display:flex;align-items:flex-end;padding:1rem;font-size:.95rem}
+.f1,.f2,.f3{background:var(--deep);border:1px solid var(--dusk);color:var(--mist)}
+.note{color:var(--mist);font-size:.95rem;margin-top:1rem}
+form{display:grid;gap:1rem;max-width:34rem}
+label{display:grid;gap:.35rem;color:var(--mist);font-size:.95rem}
+input,select,textarea{font:inherit;color:var(--moon);background:var(--deep);border:1px solid var(--dusk);border-radius:2px;padding:.7rem .8rem}
+input:focus,select:focus,textarea:focus{border-color:var(--lamp)}
+textarea{min-height:7rem;resize:vertical}
+footer{padding:2.5rem 0 3.5rem;color:var(--mist);font-size:.95rem;border-top:1px solid var(--dusk)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <nav>
+      <a class="name" href="#top">Zuki Nkalitshana</a>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="top">
+      <h1>I build software with a photographer&rsquo;s eye.</h1>
+      <p class="lede">Software engineer in Cape Town. I design and build web applications and cloud systems for small businesses and teams, and I care about how they look as much as how they run.</p>
+      <div class="btns">
+        <a class="btn main" href="#contact">Discuss a project</a>
+        <a class="btn" href="#work">See my work</a>
+      </div>
+      <p class="stack">Java, Kotlin and Python &middot; AWS &middot; CI/CD pipelines &middot; database performance</p>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="services">
+  <div class="wrap">
+    <h2>What I can build for you</h2>
+    <p class="intro">I take a project from idea to something running in production, and I stay around to keep it healthy.</p>
+    <div class="cols">
+      <div><h3>Web and mobile applications</h3><p>Custom tools shaped around how your business works: booking systems, dashboards, client portals and internal apps.</p></div>
+      <div><h3>Backend and cloud</h3><p>Dependable services in Java and Kotlin, deployed on AWS with automated pipelines so releases are routine, not stressful.</p></div>
+      <div><h3>Modernising what you already have</h3><p>Faster databases, cleaner code and safer releases for systems that have grown difficult to change.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="alt">
+  <div class="wrap">
+    <h2>Selected work</h2>
+    <p class="intro">I&rsquo;m putting my first case studies together now. Each one will cover the problem, what I built and what changed.</p>
+    <div class="case">
+      <h3>First write-ups coming soon</h3>
+      <p>If you have a project in mind, I&rsquo;d like to hear about it. Use the form below.</p>
+    </div>
+  </div>
+</section>
+
+<section id="photography">
+  <div class="wrap">
+    <h2>Photography</h2>
+    <p class="intro">Photography is my second craft. I shoot portraits and landscapes, and I&rsquo;m especially drawn to the night sky. If you&rsquo;d like a portrait or personal shoot, get in touch.</p>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="wrap">
+    <h2>Tell me what you&rsquo;re building</h2>
+    <p class="intro">Share a few details and I&rsquo;ll reply with availability and next steps.</p>
+    <form id="f">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>What is this about?
+        <select name="type">
+          <option>Software project</option>
+          <option>Fixing or modernising an existing system</option>
+          <option>Portrait or personal shoot</option>
+          <option>Landscape or astro shoot</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label>When do you need it?<input name="date" placeholder="e.g. start in January"></label>
+      <label>Details<textarea name="msg" required></textarea></label>
+      <button class="btn main" type="submit">Send enquiry</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Zuki Nkalitshana &middot; Cape Town, South Africa &middot; <a href="mailto:hello@zukinkalitshana.com">hello@zukinkalitshana.com</a></div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('f').addEventListener('submit',function(e){
+    e.preventDefault();var d=new FormData(e.target);
+    var body='Name: '+d.get('name')+'\nAbout: '+d.get('type')+'\nTiming: '+(d.get('date')||'Not specified')+'\n\n'+d.get('msg');
+    location.href='mailto:hello@zukinkalitshana.com?subject='+encodeURIComponent('Enquiry: '+d.get('type'))+'&body='+encodeURIComponent(body);
+  });
+})();
+</script>
+</body>
+</html>
