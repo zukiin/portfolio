@@ -47,6 +47,10 @@ h2{font:400 clamp(2rem,4.5vw,3rem)/1.1 var(--serif);margin:0 0 1rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1rem}
 .frame{aspect-ratio:4/5;border-radius:2px;display:flex;align-items:flex-end;padding:1rem;font-size:.95rem}
 .f1,.f2,.f3{background:var(--deep);border:1px solid var(--dusk);color:var(--mist)}
+.gallery{columns:2 16rem;column-gap:1rem;margin-top:2rem}
+.gallery figure{margin:0 0 1rem;break-inside:avoid}
+.gallery img{display:block;width:100%;height:auto;border-radius:2px;background:var(--deep)}
+.gallery figcaption{color:var(--mist);font-size:.9rem;margin-top:.4rem}
 .note{color:var(--mist);font-size:.95rem;margin-top:1rem}
 form{display:grid;gap:1rem;max-width:34rem}
 label{display:grid;gap:.35rem;color:var(--mist);font-size:.95rem}
@@ -110,6 +114,15 @@ footer{padding:2.5rem 0 3.5rem;color:var(--mist);font-size:.95rem;border-top:1px
   <div class="wrap">
     <h2>Photography</h2>
     <p class="intro">Photography is my second craft. I shoot portraits and landscapes, and I&rsquo;m especially drawn to the night sky. If you&rsquo;d like a portrait or personal shoot, get in touch.</p>
+
+    <div class="gallery">
+      <figure><img src="images/table-mountain.jpg" width="1512" height="1492" loading="lazy" alt="Table Mountain and the city across the bay at dawn, with small waves breaking on the shore"><figcaption>Table Mountain across the bay</figcaption></figure>
+      <figure><img src="images/hazy-sun.jpg" width="1200" height="1600" loading="lazy" alt="A small white sun in an orange haze, its reflection running down the wet sand"><figcaption>Hazy sunrise, wet sand</figcaption></figure>
+      <figure><img src="images/sunburst.jpg" width="1200" height="1600" loading="lazy" alt="Sunlight breaking through a cloud over the sea, with rays fanning into a blue sky"><figcaption>Light through the cloud</figcaption></figure>
+      <figure><img src="images/aerial-shore.jpg" width="1600" height="1200" loading="lazy" alt="Aerial view of surf crashing over dark rocks beside a white sand beach"><figcaption>From above</figcaption></figure>
+      <figure><img src="images/lighthouse.jpg" width="1300" height="1512" loading="lazy" alt="Red and white striped lighthouse with its lamp lit at blue hour"><figcaption>Lighthouse at blue hour</figcaption></figure>
+      <figure><img src="images/dusk-sky.jpg" width="960" height="1600" loading="lazy" alt="Pink and purple streaks of cloud at dusk above dark tree silhouettes"><figcaption>Dusk, pink and violet</figcaption></figure>
+    </div>
   </div>
 </section>
 
